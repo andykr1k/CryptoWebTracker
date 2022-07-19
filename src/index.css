@@ -6,7 +6,18 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(to bottom right, #fc0345,#fc03b1,#4a03fc);
-    background-position:center;
+    background-image: linear-gradient(to bottom right, #0341fc,#c0afeb);
+    background-position: center;
     z-index: -1;
+}
+
+html,
+body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
 }

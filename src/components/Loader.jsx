@@ -7,7 +7,7 @@ function Loader() {
     <div>
         <Player
             src='https://assets8.lottiefiles.com/packages/lf20_8lcyef9f.json'
-            className="player w-6/12"
+            className="player w-11/12"
             loop
             autoplay
         />
