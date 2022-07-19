@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import './App.css'
 
 function App() {
-  
+
   return (
     <BrowserRouter>
       <div className='overscroll-none'>
@@ -21,7 +21,7 @@ function App() {
             <Header />
           </header>
 
-          <Loader />
+          <CryptoWatchlist />
 
           <footer className='fixed bottom-0 left-0 w-screen h-12'>
             <Footer />
