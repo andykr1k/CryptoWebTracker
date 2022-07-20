@@ -48,9 +48,11 @@ function App() {
           </div>
           : 
           <div className='grid place-items-center h-screen'>
-          <h1 className='font-extrabold text-6xl'> Welcome </h1>
+          <h1 className='font-extrabold text-6xl mt-5'> Welcome </h1>
             <SignInPage /> 
-            <SignIn />
+            <div className='mb-5'>
+              <SignIn />
+            </div>
           </div>
         }
       </div>
