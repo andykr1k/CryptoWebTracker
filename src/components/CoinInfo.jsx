@@ -31,10 +31,10 @@ const CoinInfo = () => {
 
   return (
     <div>
-        <div className='flex justify-center items-center bg-black bg-opacity-5 p-3 rounded'>
+        <div className='flex justify-center items-center'>
             <form>
                 <input
-                    className='w-full text-center'
+                    className='text-center bg-black bg-opacity-5 rounded'
                     type='text'
                     onChange={handleChange}
                     placeholder='Search'
