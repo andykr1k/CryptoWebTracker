@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Loader, Header, Footer, CryptoWatchlist, SignInPage } from './components';
+import { Loader, Header, Footer, CryptoWatchlist, SignInPage, CoinInfo, Coin } from './components';
 import { BrowserRouter, Router, Routes } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -32,29 +32,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='overscroll-none'>
-          { user ? 
-            <div className='grid place-items-center h-screen'>
-
-            <header className='fixed top-0 left-0 w-screen h-12'>
-              <Header />
-            </header>
-
-            <CryptoWatchlist />
-
-            <footer className='fixed bottom-0 left-0 w-screen h-12'>
-              <Footer />
-            </footer>
-          </div>
-          : 
-          <div className='grid place-items-center h-screen'>
-          <h1 className='font-extrabold text-6xl mt-5'> Welcome </h1>
-            <SignInPage /> 
-            <div className='mb-5'>
-              <SignIn />
-            </div>
-          </div>
-        }
+      <div className='h-screen'>
+        <CryptoWatchlist />
       </div>
     </BrowserRouter>
   )
