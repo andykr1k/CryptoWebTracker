@@ -32,7 +32,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='mb-3'>
+      <div className=''>
         <CryptoWatchlist />
       </div>
     </BrowserRouter>

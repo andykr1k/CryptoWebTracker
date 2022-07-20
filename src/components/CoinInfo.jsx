@@ -12,7 +12,7 @@ const CoinInfo = () => {
     useEffect(() => {
       axios
         .get(
-          'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
+          'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
         )
         .then(res => {
           setCoins(res.data);
@@ -31,6 +31,16 @@ const CoinInfo = () => {
 
   return (
     <div>
+        <div className='flex justify-center items-center bg-black bg-opacity-5 p-3 rounded'>
+            <form>
+                <input
+                    className='w-full text-center'
+                    type='text'
+                    onChange={handleChange}
+                    placeholder='Search'
+                />
+            </form>
+        </div>
         {filteredCoins.map(coin => {
         return (
           <Coin
