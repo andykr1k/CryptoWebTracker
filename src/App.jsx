@@ -36,7 +36,7 @@ function App() {
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
-        <div className=' min-h-screen'>
+        <div className='min-h-screen'>
           <CryptoWatchlist />
         </div>
         <div className='sticky bottom-0 z-50'>
