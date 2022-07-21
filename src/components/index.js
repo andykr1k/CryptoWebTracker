@@ -5,3 +5,4 @@ export { default as CryptoWatchlist } from './CryptoWatchlist';
 export { default as SignInPage } from './SignInPage';
 export { default as CoinInfo } from './CoinInfo';
 export { default as Coin } from './Coin';
+export { default as HomePage } from './HomePage';

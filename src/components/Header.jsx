@@ -33,9 +33,9 @@ function Header() {
 
           <a
             class="px-5 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-lg"
-            href=""
+            href="/getstarted"
           >
-            Profile
+            Get Started
           </a>
         </div>
         { isOpen ? 
