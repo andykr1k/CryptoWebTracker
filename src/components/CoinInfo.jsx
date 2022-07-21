@@ -42,24 +42,27 @@ const CoinInfo = () => {
                 />
             </form>
         </div>
+        <div className="grid grid-cols-2 gap-1 md:grid-cols-4 md:gap-4">
         {filteredCoins.map(coin => {
-        return (
-          <Link to={`/coin/${coin.name}`} element={<Coin />}>
-          <motion.div whileHover={{scale:1.2}}>
-          <Coin
-            key={coin.id}
-            name={coin.name}
-            price={coin.current_price}
-            symbol={coin.symbol}
-            marketcap={coin.total_volume}
-            volume={coin.market_cap}
-            image={coin.image}
-            priceChange={coin.price_change_percentage_24h}
-          />
-          </motion.div>
-          </Link>
-        );
-      })}
+          return (
+            <Link to={`/coin/${coin.name}`} element={<Coin />}>
+            <motion.div whileHover={{scale:1.2}}>
+            <Coin
+              key={coin.id}
+              name={coin.name}
+              price={coin.current_price}
+              symbol={coin.symbol}
+              marketcap={coin.total_volume}
+              volume={coin.market_cap}
+              image={coin.image}
+              priceChange={coin.price_change_percentage_24h}
+            />
+            </motion.div>
+            </Link>
+          );
+        })}
+        </div>
+        
     </div>
   );
 };
