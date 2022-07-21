@@ -4,13 +4,18 @@ import { Player } from '@lottiefiles/react-lottie-player';
 function SignInPage() {
 
   return (
-      <div>
-        <Player
-            src='https://assets3.lottiefiles.com/packages/lf20_umqaz2yv.json'
-            className="player"
-            loop
-            autoplay
-        />
+      <div className='grid place-items-center min-h-screen'>
+        <div className=''>
+          <div className=''>
+            <h1 className='text-4xl font-extrabold sm:text-6xl text-white'> Welcome to the Future.</h1>
+          </div>
+            <Player
+                src='https://assets10.lottiefiles.com/packages/lf20_uje1bhir.json'
+                className="player"
+                loop
+                autoplay
+            />
+        </div>
       </div>
   )
 }

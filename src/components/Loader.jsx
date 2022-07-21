@@ -4,10 +4,10 @@ import { Player } from '@lottiefiles/react-lottie-player';
 function Loader() {
 
   return (
-    <div>
+    <div className=''>
         <Player
             src='https://assets8.lottiefiles.com/packages/lf20_8lcyef9f.json'
-            className="player w-11/12"
+            className="player"
             loop
             autoplay
         />

@@ -44,9 +44,7 @@ function App() {
             <Route path=':coinname' element={<Coin />} />
         </Routes>
         </div>
-        <div className='sticky bottom-0 z-50'>
-          <Footer />
-        </div>
+      <Footer />
       </div>
   )
 }
