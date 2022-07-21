@@ -20,8 +20,7 @@ function Footer() {
             <div class="pt-12 mt-32 border-t border-white/25 sm:items-center sm:justify-between sm:flex">
             <nav class="flex justify-center space-x-4 text-sm font-medium sm:justify-start">
                 <a href="" class="hover:opacity-75"> FAQs </a>
-                <a href="" class="hover:opacity-75"> Contact </a>
-                <a href="" class="hover:opacity-75"> Returns Policy </a>
+                <a href="/contact" class="hover:opacity-75"> Contact </a>
             </nav>
 
             <div class="flex justify-center mt-6 space-x-6 sm:justify-end sm:mt-0">

@@ -6,3 +6,4 @@ export { default as SignInPage } from './SignInPage';
 export { default as CoinInfo } from './CoinInfo';
 export { default as Coin } from './Coin';
 export { default as HomePage } from './HomePage';
+export { default as ContactPage } from './ContactPage';

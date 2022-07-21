@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Loader, Header, Footer, CryptoWatchlist, SignInPage, CoinInfo, Coin, HomePage } from './components';
+import { Loader, Header, Footer, CryptoWatchlist, SignInPage, CoinInfo, Coin, HomePage, ContactPage } from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -43,6 +43,7 @@ function App() {
           <Route path='/coin' element={<Coin />} />
             <Route path=':coinname' element={<Coin />} />
           <Route path='/getstarted' element={<SignInPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes>
         </div>
       <Footer />
