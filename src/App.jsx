@@ -9,27 +9,10 @@ import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import './App.css'
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCfUXVtjtV5qT_84UrKomJeTMgMteC4wZE",
-  authDomain: "cryptowebtracker.firebaseapp.com",
-  databaseURL: "https://cryptowebtracker-default-rtdb.firebaseio.com",
-  projectId: "cryptowebtracker",
-  storageBucket: "cryptowebtracker.appspot.com",
-  messagingSenderId: "759397487409",
-  appId: "1:759397487409:web:3ba44829222476e2f05610",
-  measurementId: "G-G7J4429VNJ"
-};
-
-// Initialize Firebase
-//const app = initializeApp(firebaseConfig);
-//const analytics = getAnalytics(app);
-//const auth = firebase.auth();
-//const firestore = firebase.firestore();
 
 function App() {
-  //const [user] = useAuthState(auth);
-  //const [user] = React.useState(false);
-  //const [signedIn] = React.useState(false);
+//  const [user] = useAuthState(auth);
+
 
   return (
       <div className=''>
