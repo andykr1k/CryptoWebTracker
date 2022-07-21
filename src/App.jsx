@@ -38,7 +38,7 @@ function App() {
         </div>
         <div className='grid place-items-center '>
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route path='/' element={<div className='mx-auto'><HomePage /></div>} />
             <Route path='/watchlist' element={<div className='min-h-screen'><CryptoWatchlist /></div>} />
             <Route path='/coin' element={<Coin />} />
               <Route path=':coinname' element={<Coin />} />
