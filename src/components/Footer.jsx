@@ -6,18 +6,8 @@ function Footer() {
 
   return (
     <footer class="text-white ">
-        <div class="max-w-screen-xl px-4 pt-32 pb-12 mx-auto sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-            <p class="text-4xl font-extrabold sm:text-6xl">
-                Welcome to the Future.
-            </p>
-
-            <a class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500" href="/getstarted">
-                Get Started
-            </a>
-            </div>
-
-            <div class="pt-12 mt-32 border-t border-white/25 sm:items-center sm:justify-between sm:flex">
+        <div class="max-w-screen-xl px-4 pb-12 mx-auto sm:px-6 lg:px-8">
+            <div class="pt-12  border-t border-white/25 sm:items-center sm:justify-between sm:flex">
             <nav class="flex justify-center space-x-4 text-sm font-medium sm:justify-start">
                 <a href="" class="hover:opacity-75"> FAQs </a>
                 <a href="/contact" class="hover:opacity-75"> Contact </a>

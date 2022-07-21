@@ -6,18 +6,11 @@ function ContactPage() {
   return (
     <section class="">
         <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div class="grid grid-cols- gap-x-16 gap-y-8 lg:grid-cols-5">
             <div class="lg:py-12 lg:col-span-2">
-            <p class="max-w-xl text-lg text-white">
-                At the same time, the fact that we are wholly owned and totally independent from manufacturer and other group
-                control gives you confidence that we will only recommend what is right for you.
+            <p class="max-w-xl text-4xl text-white">
+                Contact Us
             </p>
-
-            <div class="mt-8">
-                <a href="" class="text-2xl font-bold text-white"> 0151 475 4450 </a>
-
-                <address class="mt-2 not-italic text-white">282 Kevin Brook, Imogeneborough, CA 58517</address>
-            </div>
             </div>
 
             <div class="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
@@ -49,28 +42,6 @@ function ContactPage() {
                 </div>
                 </div>
 
-                <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
-                <div>
-                    <input class="sr-only" id="option1" type="radio" tabindex="-1" />
-                    <label for="option1" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 1 </span>
-                    </label>
-                </div>
-
-                <div>
-                    <input class="sr-only" id="option2" type="radio" tabindex="-1" />
-                    <label for="option2" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 2 </span>
-                    </label>
-                </div>
-
-                <div>
-                    <input class="sr-only" id="option3" type="radio" tabindex="-1" />
-                    <label for="option3" class="block w-full p-3 border border-gray-200 rounded-lg" tabindex="0">
-                    <span class="text-sm font-medium"> Option 3 </span>
-                    </label>
-                </div>
-                </div>
 
                 <div>
                 <label class="sr-only" for="message">Message</label>

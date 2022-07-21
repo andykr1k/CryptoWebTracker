@@ -36,15 +36,15 @@ function App() {
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
-        <div className='grid place-items-center min-h-screen '>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/watchlist' element={<CryptoWatchlist />} />
-          <Route path='/coin' element={<Coin />} />
-            <Route path=':coinname' element={<Coin />} />
-          <Route path='/getstarted' element={<SignInPage />} />
-          <Route path='/contact' element={<ContactPage />} />
-        </Routes>
+        <div className='grid place-items-center '>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/watchlist' element={<div className='min-h-screen'><CryptoWatchlist /></div>} />
+            <Route path='/coin' element={<Coin />} />
+              <Route path=':coinname' element={<Coin />} />
+            <Route path='/getstarted' element={<SignInPage />} />
+            <Route path='/contact' element={<ContactPage />} />
+          </Routes>
         </div>
       <Footer />
       </div>
