@@ -11,7 +11,7 @@ const Coin = ({
   priceChange
 }) => {
   return (
-    <div className='mt-5 bg-white rounded-2xl p-5 items-center'>
+    <div className='mt-5 bg-white rounded-2xl p-3 items-center'>
         <div className='grid place-items-center text-center'>
             <img src={image} className='w-16 mr-3' alt='crypto' />
             <div className='flex'>

@@ -42,7 +42,7 @@ const CoinInfo = () => {
                 />
             </form>
         </div>
-        <div className="grid grid-cols-2 gap-1 md:grid-cols-4 md:gap-4">
+        <div className="grid grid-cols-2 gap-1 md:grid-cols-3 lg:grid-cols-4 md:gap-4">
         {filteredCoins.map(coin => {
           return (
             <Link to={`/coin/${coin.name}`} element={<Coin />}>

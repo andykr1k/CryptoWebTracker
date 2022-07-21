@@ -12,7 +12,7 @@ function Footer() {
                 Welcome to the Future.
             </p>
 
-            <a class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500" href="/watchlist">
+            <a class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500" href="/getstarted">
                 Get Started
             </a>
             </div>
