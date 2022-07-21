@@ -4,6 +4,7 @@ import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
 import { TrendingCoins } from "../config/api";
 import { Coin } from '../components'
+import { motion } from "framer-motion";
 
 const CoinInfo = () => {
     const [coins, setCoins] = useState([]);
@@ -43,6 +44,8 @@ const CoinInfo = () => {
         </div>
         {filteredCoins.map(coin => {
         return (
+          <Link to={`/coin/${coin.name}`} element={<Coin />}>
+          <motion.div whileHover={{scale:1.2}}>
           <Coin
             key={coin.id}
             name={coin.name}
@@ -53,6 +56,8 @@ const CoinInfo = () => {
             image={coin.image}
             priceChange={coin.price_change_percentage_24h}
           />
+          </motion.div>
+          </Link>
         );
       })}
     </div>

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import logoutlogo from '../assets/logout.png'
 import logo from '../assets/emoji.png'
+
 function Footer() {
 
   return (

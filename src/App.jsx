@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Loader, Header, Footer, CryptoWatchlist, SignInPage, CoinInfo, Coin } from './components';
-import { BrowserRouter, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -28,22 +28,26 @@ const firebaseConfig = {
 
 function App() {
   //const [user] = useAuthState(auth);
-  const [user] = React.useState(false);
+  //const [user] = React.useState(false);
+  //const [signedIn] = React.useState(false);
 
   return (
-    <BrowserRouter>
       <div className=''>
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
-        <div className='min-h-screen'>
-          <CryptoWatchlist />
+        <div className='min-h-screen min-w-min'>
+        <Routes>
+          <Route path='/' element={<SignInPage />} />
+          <Route path='/watchlist' element={<CryptoWatchlist />} />
+          <Route path='/coin' element={<Coin />} />
+            <Route path=':coinname' element={<Coin />} />
+        </Routes>
         </div>
         <div className='sticky bottom-0 z-50'>
           <Footer />
         </div>
       </div>
-    </BrowserRouter>
   )
 }
 
@@ -71,6 +75,14 @@ export function SignOut() {
     </div>
 
   )
+}
+
+export function addToFavorites(){
+
+}
+
+export function removeFromFavorites(){
+  
 }
 
 export default App

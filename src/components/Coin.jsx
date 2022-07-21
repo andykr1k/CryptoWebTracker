@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 const Coin = ({
   name,
@@ -27,14 +28,14 @@ const Coin = ({
         </div>
     
         <div className='text-xs m-0'>
-            {priceChange < 0 ? (
+            {priceChange != null && priceChange < 0 ? (
                     <p className='text-red-600'>{priceChange.toFixed(2)}%</p>
                 ) : (
-                    <p className='text-green-600'>{priceChange.toFixed(2)}%</p>
+                    <p className='text-green-600'>{priceChange}%</p>
             )}
-            <p className=''>Volume: {volume.toLocaleString()}</p>
+            <p className=''>Volume: {volume}</p>
             <p className=''>
-                Market Cap: ${marketcap.toLocaleString()}
+                Market Cap: ${marketcap}
             </p>
         </div>
     </div>
