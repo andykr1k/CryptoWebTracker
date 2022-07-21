@@ -36,7 +36,7 @@ function App() {
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
-        <div className='min-h-screen min-w-min'>
+        <div className='grid place-items-center min-h-screen '>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/watchlist' element={<CryptoWatchlist />} />

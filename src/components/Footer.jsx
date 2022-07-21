@@ -9,7 +9,7 @@ function Footer() {
         <div class="max-w-screen-xl px-4 pt-32 pb-12 mx-auto sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center">
             <p class="text-4xl font-extrabold sm:text-6xl">
-                Crypto Web Tracker
+                Welcome to the Future.
             </p>
 
             <a class="inline-block px-12 py-3 mt-8 text-sm font-medium border rounded-full border-white/25 hover:bg-white hover:text-red-500" href="/watchlist">

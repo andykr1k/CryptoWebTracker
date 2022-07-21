@@ -43,7 +43,6 @@ function Header() {
               <a className='text-white align-baseline bg-black bg-opacity-5 rounded p-2' href='/'>Home</a>
               <a className='text-white align-baseline bg-black bg-opacity-5 rounded p-2' href='/watchlist'>Watchlist</a>
               <a className='text-white align-baseline bg-black bg-opacity-5 rounded p-2' href='/profile'>Profile</a>
-              <a className='text-white align-baseline bg-black bg-opacity-5 rounded p-2' href='/logout'>Log Out</a>
             </div>
           :
             <div className='hidden'></div>
