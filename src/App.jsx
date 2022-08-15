@@ -2,8 +2,6 @@ import * as React from 'react';
 import { Loader, Header, Footer, CryptoWatchlist, SignInPage, CoinInfo, Coin, HomePage, ContactPage } from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import firebase from 'firebase/compat/app';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { motion } from "framer-motion";
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
@@ -11,11 +9,9 @@ import './App.css'
 
 
 function App() {
-//  const [user] = useAuthState(auth);
-
 
   return (
-      <div className=''>
+      <div className='grid'>
         <div className='sticky top-0 z-50'>
           <Header />
         </div>
@@ -29,7 +25,9 @@ function App() {
             <Route path='/contact' element={<ContactPage />} />
           </Routes>
         </div>
-      <Footer />
+        <div className='mt-3'>
+          <Footer />
+        </div>
       </div>
   )
 }
